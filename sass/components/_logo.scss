@@ -1,0 +1,16 @@
+// Logo header
+.logo {
+  font-family: "Raleway", sans-serif;
+  @include font(26px, 1.19, 700, 0.03em);
+  color: var(--brand-color);
+  padding: 0;
+}
+
+.logo-header {
+  color: var(--main-color);
+}
+// Logo footer
+
+.logo-footer {
+  color: var(--accent-color);
+}

@@ -1,0 +1,6 @@
+.work__title,
+.our-team__title,
+.clients-title {
+  @include font(36px, 1.17, 700, 0.03em);
+  text-align: center;
+}

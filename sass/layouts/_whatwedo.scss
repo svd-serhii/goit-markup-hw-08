@@ -1,0 +1,30 @@
+.work {
+  padding-top: 0;
+}
+
+.work__title {
+  margin-bottom: 50px;
+}
+
+.work-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.work-list__thumb {
+  position: relative;
+}
+
+.work-list__subtitle {
+  position: absolute;
+  padding: 27px 0;
+  @include font(14px, 1.14, 700, 0.03em);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+}

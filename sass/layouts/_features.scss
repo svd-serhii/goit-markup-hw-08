@@ -1,0 +1,26 @@
+.features-list {
+  display: flex;
+  gap: 30px;
+}
+
+.features-list__icon-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background: var(--portfolio-bcg-color);
+  border-radius: 4px;
+}
+
+.features-list__title {
+  @include font(14px, 1.14, 700, 0.03em);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.features-list__text {
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+}
