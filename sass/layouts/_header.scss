@@ -4,15 +4,21 @@
   height: 60px;
   width: 100%;
 }
+
 .header__logo {
   margin-right: auto;
   margin-top: 15px;
 }
-.menu-open {
+.menu-toggle {
   margin-top: 10px;
   margin-left: auto;
   border: none;
-  background-color: var(--accent-color);
+  background-color: transparent;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: var(--brand-color);
+  }
 }
 
 .nav-container {
