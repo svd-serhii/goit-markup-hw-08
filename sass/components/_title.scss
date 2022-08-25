@@ -1,6 +1,10 @@
 .work__title,
 .our-team__title,
 .clients-title {
-  @include font(36px, 1.17, 700, 0.03em);
+  @include font(28px, 1.19, 700, 0.03em);
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    @include font(36px, 1.17, 700, 0.03em);
+  }
 }

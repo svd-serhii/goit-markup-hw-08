@@ -9,7 +9,7 @@
   font-style: normal;
   text-align: center;
   color: var(--accent-color);
-  padding: 10px 32px;
+  padding: 10px 24px;
   transition: background-color var(--timing-duration) var(--timing-function);
   &:hover,
   &:focus {
@@ -32,6 +32,8 @@
   text-align: center;
   color: var(--accent-color);
   padding: 10px 28px;
+  margin-left: auto;
+  margin-right: auto;
   transition: background-color var(--timing-duration) var(--timing-function);
   &:hover,
   &:focus {

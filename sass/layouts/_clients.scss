@@ -1,12 +1,24 @@
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
+}
+.clients-list__item {
+  width: calc((100% - 30px) / 2);
+
+  @include mobile {
+    width: calc((100% - 30px) / 2);
+  }
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+  }
+  @include desktop {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .clients-list__link {
-  width: 170px;
   height: 92px;
   border: 1px solid var(--icon-social-color);
   border-radius: 4px;

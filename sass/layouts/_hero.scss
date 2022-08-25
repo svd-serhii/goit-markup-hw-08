@@ -1,18 +1,21 @@
 .hero {
   max-width: 1600px;
+  padding-top: 118px;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-section-Img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(#);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 200px 0;
 }
 
 .hero__title {
-  margin-bottom: 35px;
-  @include font(44px, 1.36, 900, 0.06em);
+  margin-bottom: 30px;
+  @include font(26px, 1.6, 900, 0.06em);
   text-align: center;
   text-transform: uppercase;
   color: var(--accent-color);
+  @include desktop {
+    @include font(44px, 1.36, 900, 0.06em);
+  }
 }
