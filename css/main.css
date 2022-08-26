@@ -316,7 +316,7 @@ ol {
 }
 
 .modal-form {
-  width: 280px;
+  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .modal-form {
