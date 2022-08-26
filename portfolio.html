@@ -45,8 +45,8 @@
         <div class="header-connect">
           <ul class="contact list">
             <li class="contact__item">
-              <a href="mailto:info@devstudio.com" class="contact-link link">
-                <svg class="contact__icon" width="16" height="12">
+              <a href="mailto:info@devstudio.com" class="contact__link link">
+                <svg class="contact__icon icon-mail" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
@@ -54,7 +54,7 @@
             </li>
             <li class="contact__item">
               <a href="tel:+380961111111" class="contact__link link">
-                <svg class="contact__icon" width="10" height="16">
+                <svg class="contact__icon icon-phone" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11
@@ -299,9 +299,9 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrap">
-          <div class="adress-wrap">
+          <div class="address-wrap">
             <address class="address">
-              <a href="./index.html" class="logo link"> Web<span class="logo-footer">Studio</span> </a>
+              <a href="./index.html" class="logo address__logo link"> Web<span class="logo-footer">Studio</span> </a>
               <ul class="contacts list">
                 <li class="contacts__item">
                   <a
@@ -358,7 +358,9 @@
           <div class="subscribe">
             <h2 class="subscribe__title">Підпишіться на розсилку</h2>
             <form class="subscribe__form">
-              <input class="subscribe__email" name="user-email" type="email" placeholder="E-mail" />
+              <div class="subscribe__field">
+                <input class="subscribe__email" name="user-email" type="email" placeholder="E-mail" />
+              </div>
               <button class="subscribe__btn btn" type="submit">
                 Підписатися
                 <svg class="subscribe__btn-icon" width="24" height="24">
@@ -370,7 +372,7 @@
         </div>
       </div>
     </footer>
-
+    <!-- Mobile menu -->
     <div class="mob-menu js-menu-container" id="mobile-menu">
       <div class="menu-container">
         <button class="menu-toggle js-close-menu" type="button">
@@ -394,10 +396,10 @@
         <div class="menu-connect">
           <ul class="menu-contact list">
             <li class="menu-contact__item">
-              <a href="tel:+380961111111" class="menu-tel link"> +38 096 111 11 11 </a>
+              <a href="tel:+380961111111" class="menu-link link"> +38 096 111 11 11 </a>
             </li>
             <li class="menu-contact__item">
-              <a href="mailto:info@devstudio.com" class="menu-email link"> info@devstudio.com </a>
+              <a href="mailto:info@devstudio.com" class="menu-link link"> info@devstudio.com </a>
             </li>
           </ul>
           <ul class="menu-social list">

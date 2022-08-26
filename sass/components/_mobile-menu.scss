@@ -51,20 +51,24 @@
     padding-left: 40px;
   }
 }
-.menu-tel {
+.menu-link {
+  @include font(18px, 1.17, 500, 0.02em);
+  color: var(--second-color);
+  @include mobile {
+    @include font(24px, 1.17, 500, 0.02em);
+  }
+  transition: color var(--timing-duration) var(--timing-function);
+}
+
+.menu-link:hover,
+.menu-link:focus {
   @include font(28px, 1.14, 500, 0.02em);
   color: var(--brand-color);
   @include mobile {
     @include font(34px, 1.14, 500, 0.02em);
   }
 }
-.menu-email {
-  @include font(18px, 1.17, 500, 0.02em);
-  color: var(--second-color);
-  @include mobile {
-    @include font(24px, 1.17, 500, 0.02em);
-  }
-}
+
 .menu-contact__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -73,10 +77,16 @@
   margin-top: 64px;
   display: flex;
   gap: 10px;
+  // @include mobile {
+  //   gap: 20px;
+  // }
 }
 .menu-social__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 5px;
+  @include mobile {
+    padding-right: 10px;
+  }
 }
 .menu-social__link {
   @include font(12px, 1.22, 500, 0.02em);

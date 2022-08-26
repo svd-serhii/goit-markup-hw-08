@@ -1,18 +1,36 @@
 .filters {
   display: flex;
-  justify-content: center;
-  margin-bottom: 46px;
+  flex-wrap: wrap;
+  // justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
   gap: 8px;
+  @include tablet {
+    justify-content: center;
+  }
+  @include desktop {
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
 }
 
 .projects {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .projects__item {
-  width: calc((100% - 60px) / 3);
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .projects__link {

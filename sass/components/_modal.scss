@@ -21,16 +21,24 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
+  width: 100%;
   min-height: 581px;
   background-color: var(--accent-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--timing-duration) var(--timing-function);
-  padding: 40px;
+  padding: 20px;
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0);
+  }
+  @include mobile {
+    width: 450px;
+    padding: 40px;
+  }
+
+  @include desktop {
+    width: 528px;
   }
 }
 
@@ -68,10 +76,20 @@
   @include font(20px, 1.15, 700, 0.03em);
   text-align: center;
   margin-bottom: 30px;
+  margin-top: 20px;
+  @include mobile {
+    margin-top: 0;
+  }
 }
 
 .modal-form {
-  width: 448px;
+  width: 280px;
+  @include mobile {
+    width: 370px;
+  }
+  @include desktop {
+    width: 448px;
+  }
 }
 
 .modal-field {
@@ -146,9 +164,10 @@
 
 .check-text {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  @include font(14px, 1.7, 400, 0.03em);
+  gap: 5px;
+  @include font(12px, 1.17, 400, 0.03em);
   color: var(--second-color);
   span {
     width: 16px;
@@ -169,6 +188,10 @@
       border-color: var(--main-color);
     }
   }
+  @include desktop {
+    @include font(14px, 1.7, 400, 0.03em);
+    align-items: center;
+  }
 }
 
 .check-icon {
@@ -181,10 +204,10 @@
 
 .policy-agreement {
   color: var(--overflow-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  @include font(12px, 1.17, 400, 0.03em);
+  @include desktop {
+    @include font(14px, 1.7, 400, 0.03em);
+  }
 }
 
 /* Button modal submit */

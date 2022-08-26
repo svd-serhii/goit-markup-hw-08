@@ -3,11 +3,22 @@
   border-bottom: 1px solid #ececec;
   height: 60px;
   width: 100%;
+  background-color: var(--accent-color);
+  @include tablet {
+    height: 80px;
+  }
 }
 
 .header__logo {
   margin-right: auto;
   margin-top: 15px;
+  @include tablet {
+    margin-top: 26px;
+    margin-right: 88px;
+  }
+  @include desktop {
+    margin-right: 93px;
+  }
 }
 .menu-toggle {
   margin-top: 10px;
@@ -19,20 +30,29 @@
   &:focus {
     fill: var(--brand-color);
   }
+  @include tablet {
+    display: none;
+  }
 }
 
 .nav-container {
   display: flex;
+  @include tablet {
+    width: 768px;
+  }
+  @include desktop {
+    width: 1200px;
+  }
 }
 
 .nav {
   display: none;
-  // display: flex;
-  // align-items: center;
+  @include tablet {
+    display: flex;
+  }
 }
 
-.nav__navigation {
-  margin-left: 95px;
+.nav__list {
   display: flex;
   gap: 50px;
   .nav__item:last-child {
@@ -41,13 +61,31 @@
 }
 .header-connect {
   display: none;
+  @include tablet {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contact {
-  margin-left: auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  @include tablet {
+    padding: 21px 0;
+  }
+  @include desktop {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+}
+.contact__item:not(:last-child) {
+  @include tablet {
+    margin-bottom: 10px;
+  }
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .contact__link {
@@ -61,11 +99,44 @@
   &:focus {
     color: var(--brand-color);
   }
+
+  @include tablet {
+    @include font(12px, 1.14, 500, 0.02em);
+    padding: 0;
+  }
+  @include desktop {
+    @include font(14px, 1.14, 500, 0.02em);
+    padding: 10px 0;
+  }
 }
 
 .contact__icon {
   margin-right: 10px;
   fill: currentColor;
+  @include tablet {
+    margin-right: 8px;
+  }
+}
+
+.icon-mail {
+  @include tablet {
+    width: 14px;
+    height: 10px;
+  }
+  @include desktop {
+    width: 16px;
+    height: 12px;
+  }
+}
+.icon-phone {
+  @include tablet {
+    width: 8px;
+    height: 14px;
+  }
+  @include desktop {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .nav__link {
@@ -92,5 +163,11 @@
     background-color: currentColor;
     left: 0;
     bottom: -1px;
+  }
+}
+
+.social {
+  @include tablet {
+    display: none;
   }
 }
