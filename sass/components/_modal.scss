@@ -83,7 +83,7 @@
 }
 
 .modal-form {
-  max-width: calc (100% - 40px);
+  max-width: calc(100% - 40px);
   @include mobile {
     width: 370px;
   }

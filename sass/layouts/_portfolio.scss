@@ -82,3 +82,11 @@
     color: var(--second-color);
   }
 }
+.projects__item:first-child .description-wrap {
+  @include tablet {
+    height: 146px;
+  }
+  @include desktop {
+    height: auto;
+  }
+}
