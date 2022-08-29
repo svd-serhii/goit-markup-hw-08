@@ -803,6 +803,11 @@ ol {
   background-color: var(--background);
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    text-align: left;
+  }
+}
 
 .footer-wrap {
   display: flex;
@@ -818,9 +823,8 @@ ol {
 }
 @media screen and (min-width: 1200px) {
   .footer-wrap {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -831,6 +835,11 @@ ol {
 
 .address {
   font-style: normal;
+}
+@media screen and (min-width: 1200px) {
+  .address {
+    text-align: left;
+  }
 }
 
 .contacts {
@@ -878,6 +887,12 @@ ol {
   color: var(--accent-color);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .footer-soc-title,
+.subscribe__title {
+    text-align: left;
+  }
+}
 
 .footer-soc-wrap {
   margin-bottom: 60px;
@@ -886,11 +901,28 @@ ol {
 
 /* Social contacts */
 /* Subscribe */
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .subscribe__field {
   max-width: 450px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__field {
+    max-width: 358px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 }
 
 .subscribe__email {
@@ -921,6 +953,11 @@ ol {
 @media screen and (min-width: 480px) {
   .subscribe__email {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__email {
+    width: 358px;
   }
 }
 
@@ -1300,18 +1337,17 @@ ol {
 .filters {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 60px;
   margin-bottom: 40px;
   gap: 8px;
 }
 @media screen and (min-width: 768px) {
   .filters {
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .filters {
-    margin-top: 94px;
     margin-bottom: 50px;
   }
 }

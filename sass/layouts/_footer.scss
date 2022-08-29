@@ -2,6 +2,9 @@
   padding: 60px 0;
   background-color: var(--background);
   text-align: center;
+  @include desktop {
+    text-align: left;
+  }
 }
 
 .footer-wrap {
@@ -15,9 +18,8 @@
     justify-content: space-around;
   }
   @include desktop {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -25,10 +27,16 @@
 
 .address-wrap {
   margin-bottom: 60px;
+  // @include desktop {
+  //   margin-right: 70px;
+  // }
 }
 
 .address {
   font-style: normal;
+  @include desktop {
+    text-align: left;
+  }
 }
 
 .address__logo {
@@ -71,6 +79,9 @@
   text-align: center;
   color: var(--accent-color);
   margin-bottom: 20px;
+  @include desktop {
+    text-align: left;
+  }
 }
 
 .footer-soc-wrap {
@@ -83,9 +94,18 @@
 /* Subscribe */
 
 .subscribe {
+  // @include desktop {
+  //   margin-left: auto;
+  // }
 }
 
 .subscribe__form {
+  @include desktop {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .subscribe__field {
@@ -93,6 +113,12 @@
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+  @include desktop {
+    max-width: 358px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 }
 
 .subscribe__email {
@@ -118,5 +144,8 @@
   }
   @include mobile {
     width: 450px;
+  }
+  @include desktop {
+    width: 358px;
   }
 }

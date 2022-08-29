@@ -1,15 +1,13 @@
 .filters {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
-  margin-top: 60px;
   margin-bottom: 40px;
   gap: 8px;
   @include tablet {
     justify-content: center;
+    margin-bottom: 30px;
   }
   @include desktop {
-    margin-top: 94px;
     margin-bottom: 50px;
   }
 }
